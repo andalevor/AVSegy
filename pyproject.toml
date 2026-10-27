@@ -1,0 +1,18 @@
+[build-system]
+requires = [
+    "meson-python>=0.15",
+    "numpy",
+]
+build-backend = "mesonpy"
+
+[project]
+name            = "avsegy"
+version         = "0.0.1"
+description     = "Python C-extension for SEGY read/write"
+readme          = "README.md"
+requires-python = ">=3.10"
+dependencies    = ["numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
